@@ -74,8 +74,15 @@ export function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-slate-700 pt-8 text-center text-slate-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} {genesisData.name}. All rights reserved.</p>
+        <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
+          <div className="mb-4 md:mb-0">
+            &copy; {new Date().getFullYear()} {genesisData.name}. All rights reserved.
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms-and-conditions" className="hover:text-white transition-colors">Terms & Conditions</Link>
+            <Link to="/medical-disclaimer" className="hover:text-white transition-colors">Medical Disclaimer</Link>
+          </div>
         </div>
       </div>
     </footer>

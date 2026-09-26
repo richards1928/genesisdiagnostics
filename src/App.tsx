@@ -7,6 +7,9 @@ import { ServicesPage } from './pages/ServicesPage';
 import { AdvancedDiagnosticsPage } from './pages/AdvancedDiagnosticsPage';
 import { TestsPage } from './pages/TestsPage';
 import { ContactPage } from './pages/ContactPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { TermsPage } from './pages/TermsPage';
+import { MedicalDisclaimerPage } from './pages/MedicalDisclaimerPage';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
             <Route path="/advanced-diagnostics" element={<Navigate to="/advanced-genetic-tests" replace />} />
             <Route path="/tests" element={<TestsPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/terms-and-conditions" element={<TermsPage />} />
+            <Route path="/medical-disclaimer" element={<MedicalDisclaimerPage />} />
           </Routes>
         </main>
         <Footer />
