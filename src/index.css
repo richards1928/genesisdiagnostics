@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background-soft text-text-primary font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-6 py-3;
+  }
+  
+  .btn-primary {
+    @apply bg-medical text-white hover:bg-medical-dark;
+  }
+  
+  .glow-red {
+    box-shadow: 0 0 10px rgba(220, 0, 0, 0.15);
+  }
+  
+  .glow-red-hover {
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .glow-red-hover:hover {
+    box-shadow: 0 0 14px rgba(220, 0, 0, 0.20);
+  }
+  
+  .glow-cyan {
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.12);
+  }
+  
+  .btn-outline {
+    @apply border border-border bg-white text-text-primary hover:bg-gray-50;
+  }
+}
