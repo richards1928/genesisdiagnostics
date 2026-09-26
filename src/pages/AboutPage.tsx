@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { About } from '../components/sections/About';
 import { genesisData } from '../data/genesis';
-import { MapPin, Phone, Clock } from 'lucide-react';
+import { MapPin, Phone, Clock, Award, GraduationCap, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 function AboutHero() {
@@ -154,6 +154,107 @@ function FounderSection() {
   );
 }
 
+function OrthopaedicsSection() {
+  const certificates = [
+    { src: "/assets/prathap-board.png", label: "Fellowship & Qualification" },
+    { src: "/assets/prathap-fifa.png", label: "FIFA Diploma in Football Medicine" },
+    { src: "/assets/prathap-ista.png", label: "Doctors Excellence Awards" },
+    { src: "/assets/prathap-times-health.png", label: "Times Health Excellence Awards" }
+  ];
+
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-slate-50 rounded-2xl border border-border shadow-sm p-6 md:p-10 lg:p-12">
+          
+          <div className="text-center mb-8">
+            <div className="inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-xs tracking-wider uppercase w-max">
+              Orthopaedics & Sports Medicine
+            </div>
+            <h2 className="text-3xl lg:text-4xl font-heading font-extrabold text-primary mb-2">
+              Dr. Prathap Parvataneni
+            </h2>
+            <p className="text-lg lg:text-xl text-medical font-bold">
+              MBBS, MS (Ortho)
+            </p>
+          </div>
+
+          <div className="w-full bg-[#1a1a1a] rounded-xl overflow-hidden mb-12 shadow-inner border border-border/50 flex justify-center">
+            <img 
+              src="/assets/prathap-interview.png" 
+              alt="Dr. Prathap Parvataneni"
+              className="w-full max-h-[600px] object-contain"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+            <div>
+              <h3 className="flex items-center text-lg font-bold text-primary mb-5 border-b border-border/50 pb-2">
+                <GraduationCap className="w-5 h-5 text-medical mr-2" />
+                Credentials & Fellowships
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <CheckCircle className="w-4 h-4 text-medical mt-1 mr-3 flex-shrink-0" />
+                  <span className="text-text-secondary leading-relaxed">Fellowship in Knee Surgery & Sports Medicine — France</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-4 h-4 text-medical mt-1 mr-3 flex-shrink-0" />
+                  <span className="text-text-secondary leading-relaxed">Fellowship in Arthroscopy & Sports Medicine — U.K.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-4 h-4 text-medical mt-1 mr-3 flex-shrink-0" />
+                  <span className="text-text-secondary leading-relaxed">FIFA Diploma in Football Medicine</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="flex items-center text-lg font-bold text-primary mb-5 border-b border-border/50 pb-2">
+                <Award className="w-5 h-5 text-medical mr-2" />
+                Recognition
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <CheckCircle className="w-4 h-4 text-medical mt-1 mr-3 flex-shrink-0" />
+                  <span className="text-text-secondary leading-relaxed">Service Excellence in Arthroscopy & Sports Medicine</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="w-4 h-4 text-medical mt-1 mr-3 flex-shrink-0" />
+                  <span className="text-text-secondary leading-relaxed">Doctors Excellence Awards recognition</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-10 border-t border-border/60">
+             <h3 className="text-xl font-heading font-bold text-primary text-center mb-8">Verified Credentials & Awards</h3>
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                {certificates.map((cert, idx) => (
+                  <div key={idx} className="bg-white rounded-xl border border-border/60 shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+                    <div className="p-3 bg-slate-50 border-b border-border/50 text-center">
+                      <span className="text-sm font-semibold text-primary">{cert.label}</span>
+                    </div>
+                    <div className="w-full aspect-[4/3] bg-white p-4 flex items-center justify-center">
+                      <img 
+                        src={cert.src} 
+                        alt={cert.label} 
+                        className="w-full h-full object-contain" 
+                        loading="lazy" 
+                      />
+                    </div>
+                  </div>
+                ))}
+             </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function AboutPage() {
   useEffect(() => {
     document.title = "About Genesis Diagnostic | Hafeezpet, Hyderabad";
@@ -165,6 +266,7 @@ export function AboutPage() {
       <About />
       <ServicesAtAGlance />
       <FounderSection />
+      <OrthopaedicsSection />
       <PatientExperience />
       
       {/* Simple Location Strip */}
