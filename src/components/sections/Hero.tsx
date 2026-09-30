@@ -22,9 +22,14 @@ export function Hero() {
             Comprehensive Diagnostic & Genetic Services Under One Roof
           </h1>
           
-          <p className="text-lg text-slate-100 mb-8 leading-relaxed max-w-lg">
-            Diagnostic testing, advanced genetic tests, and health check-up services.
-          </p>
+          <div className="text-base sm:text-lg text-slate-100 mb-8 leading-relaxed max-w-lg space-y-4">
+            <p>
+              Get access to reliable diagnostic testing, advanced genetic testing, and comprehensive health check-ups all in one place.
+            </p>
+            <p>
+              From routine health assessments to advanced genomic and molecular testing, we provide convenient, technology-driven solutions to help you understand your health better and make informed decisions.
+            </p>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-10">
             <a href="tel:+919701552056" className="btn bg-medical hover:bg-medical/90 text-white border-0 flex items-center justify-center w-full sm:w-auto glow-red-hover transition-all">
