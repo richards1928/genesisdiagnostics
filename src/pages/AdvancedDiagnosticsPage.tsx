@@ -183,7 +183,7 @@ function PartneredNetworkSection() {
                 Hyderabad — Partnered Hub
               </h3>
               <p className="text-slate-600 mb-0">
-                Advanced diagnostic facility in collaboration with Progenics Laboratories Pvt.Ltd.
+                Advanced genetic and molecular testing services in collaboration with Progenics Laboratories Pvt.Ltd.
               </p>
             </div>
             
