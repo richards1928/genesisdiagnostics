@@ -39,7 +39,7 @@ function WhatWeOffer() {
     },
     {
       title: "Home Sample Collection",
-      description: "Convenient sample collection at Genesis Diagnostic.",
+      description: "Get your samples collected safely and conveniently from the comfort of your home, with easy scheduling and professional support.",
       image: "/assets/what-we-offer-sample-collection.jpg",
       categories: ["Home Sample Collection"],
       ctaText: "Contact Genesis",

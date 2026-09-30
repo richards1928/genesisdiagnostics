@@ -121,7 +121,7 @@ export function Location() {
             </div>
             <h3 className="text-2xl font-heading font-extrabold text-primary mb-4">Home Sample Collection</h3>
             <p className="text-slate-600 mb-8 leading-relaxed">
-              Convenient sample collection at Genesis Diagnostic.
+              Get your samples collected safely and conveniently from the comfort of your home, with easy scheduling and professional support.
             </p>
 
             <div className="bg-[#F5FCFE] w-full p-6 rounded-2xl border border-medical/20 mb-8 relative overflow-hidden">
