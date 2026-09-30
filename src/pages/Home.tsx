@@ -12,7 +12,7 @@ function WhatWeOffer() {
   const offerings = [
     {
       title: "Diagnostic Tests",
-      description: "Routine and comprehensive diagnostic testing services.",
+      description: "Access routine blood and urine testing for everyday health assessments and diagnostic needs. Our diagnostic testing services cover commonly requested laboratory investigations in a convenient and accessible setting.",
       image: "/assets/what-we-offer-diagnostic-testing.jpg",
       categories: ["Blood Tests", "Urine Tests"],
       ctaText: "Explore Tests",
@@ -21,7 +21,7 @@ function WhatWeOffer() {
     },
     {
       title: "Radiology Services",
-      description: "Professional imaging services available through Genesis Diagnostic.",
+      description: "Access radiology services for routine imaging and diagnostic evaluation. Genesis Diagnostics provides X-ray imaging services for commonly requested radiological examinations.",
       image: "/assets/what-we-offer-radiology.jpg",
       categories: ["Radiology Services"],
       ctaText: "Explore Services",
@@ -30,7 +30,7 @@ function WhatWeOffer() {
     },
     {
       title: "Genetic Tests",
-      description: "Advanced genetic and molecular testing services.",
+      description: "Access advanced genetic and molecular testing services through our collaboration with Progenics Laboratories Pvt. Ltd. The service portfolio includes advanced sequencing, targeted gene panels, molecular diagnostics, molecular cytogenetics, and microbiome testing.",
       image: "/assets/advanced-genetic-testing.jpg",
       categories: ["Genetic & Molecular Tests"],
       ctaText: "Explore Genetic Tests",
