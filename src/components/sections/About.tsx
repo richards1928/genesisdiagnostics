@@ -15,7 +15,7 @@ export function About() {
             
             <div className="prose prose-lg text-slate-600 mb-8 space-y-4">
               <p>
-                {genesisData.name} is a dedicated {genesisData.category.toLowerCase()} located in Hafeezpet, providing a comprehensive range of health check-up and diagnostic testing services. 
+                {genesisData.name} is a dedicated {genesisData.category.toLowerCase()} located in Gokul Plots, providing a comprehensive range of health check-up and diagnostic testing services. 
               </p>
               <p>
                 Our approach to healthcare is centered around the patient experience. We prioritize highly hygienic sample collection and maintain affordable service structures to ensure accessible diagnostics for our community.

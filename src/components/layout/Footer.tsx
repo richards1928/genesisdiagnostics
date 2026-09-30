@@ -23,7 +23,7 @@ export function Footer() {
               {genesisData.tagline}
             </p>
             <p className="text-slate-300 text-sm leading-relaxed mb-6">
-              Diagnostic testing and health check-up services in Hafeezpet, Hyderabad.
+              Diagnostic testing and health check-up services in Gokul Plots, Hyderabad.
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export function Footer() {
               <li><Link to="/" className="text-slate-300 hover:text-accent transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-slate-300 hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/services" className="text-slate-300 hover:text-accent transition-colors">Services</Link></li>
-              <li><Link to="/advanced-genetic-tests" className="text-slate-300 hover:text-accent transition-colors">Advanced Genetic Tests</Link></li>
+              <li><Link to="/advanced-genetic-tests" className="text-slate-300 hover:text-accent transition-colors">Genetic Tests</Link></li>
               <li><Link to="/tests" className="text-slate-300 hover:text-accent transition-colors">Tests & Prices</Link></li>
               <li><Link to="/contact" className="text-slate-300 hover:text-accent transition-colors">Contact</Link></li>
             </ul>
@@ -44,12 +44,10 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-heading font-bold mb-4 text-white">Services</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/services" className="text-slate-300 hover:text-accent transition-colors">Diagnostic Services</Link></li>
-              <li><Link to="/services" className="text-slate-300 hover:text-accent transition-colors">Health Check-ups</Link></li>
-              <li><Link to="/tests" className="text-slate-300 hover:text-accent transition-colors">Blood Tests</Link></li>
-              <li><Link to="/tests" className="text-slate-300 hover:text-accent transition-colors">Urine Testing</Link></li>
-              <li><Link to="/tests" className="text-slate-300 hover:text-accent transition-colors">Radiology</Link></li>
-              <li><Link to="/contact" className="text-slate-300 hover:text-accent transition-colors">Sample Collection</Link></li>
+              <li><Link to="/services" className="text-slate-300 hover:text-accent transition-colors">Diagnostic Tests</Link></li>
+              <li><Link to="/tests" className="text-slate-300 hover:text-accent transition-colors">Radiology Services</Link></li>
+              <li><Link to="/advanced-genetic-tests" className="text-slate-300 hover:text-accent transition-colors">Genetic Tests</Link></li>
+              <li><Link to="/contact" className="text-slate-300 hover:text-accent transition-colors">Home Sample Collection</Link></li>
             </ul>
           </div>
 

@@ -25,7 +25,7 @@ function AboutHero() {
           </h1>
           
           <p className="text-lg text-slate-100 leading-relaxed max-w-lg">
-            Genesis Diagnostic is a medical laboratory in Hafeezpet, Hyderabad, providing diagnostic and health check-up services with a patient-focused approach.
+            Genesis Diagnostic is a medical laboratory in Gokul Plots, Hyderabad, providing diagnostic and health check-up services with a patient-focused approach.
           </p>
         </div>
       </div>
@@ -35,13 +35,10 @@ function AboutHero() {
 
 function ServicesAtAGlance() {
   const services = [
-    "Diagnostic Services",
-    "Health Check-ups",
-    "Blood Tests",
-    "Urine Testing",
-    "Radiology",
-    "Sample Collection",
-    "Advanced Genetic Tests"
+    "Diagnostic Tests",
+    "Radiology Services",
+    "Genetic Tests",
+    "Home Sample Collection"
   ];
 
   return (
@@ -53,7 +50,7 @@ function ServicesAtAGlance() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
           {services.map((service, idx) => {
-            const link = service === "Advanced Genetic Tests" ? "/advanced-genetic-tests" : service === "Blood Tests" || service === "Urine Testing" || service === "Radiology" ? "/tests" : service === "Sample Collection" ? "/contact" : "/services";
+            const link = service === "Genetic Tests" ? "/advanced-genetic-tests" : service === "Home Sample Collection" ? "/contact" : service === "Diagnostic Tests" || service === "Radiology Services" ? "/tests" : "/services";
             return (
               <Link key={idx} to={link} className="bg-white p-4 rounded-xl border border-border text-center hover:border-medical/30 hover:shadow-sm transition-all group flex flex-col items-center justify-center">
                 <span className="font-medium text-primary text-sm group-hover:text-medical transition-colors">{service}</span>
@@ -257,7 +254,7 @@ function OrthopaedicsSection() {
 
 export function AboutPage() {
   useEffect(() => {
-    document.title = "About Genesis Diagnostic | Hafeezpet, Hyderabad";
+    document.title = "About Genesis Diagnostic | Gokul Plots, Hyderabad";
   }, []);
 
   return (

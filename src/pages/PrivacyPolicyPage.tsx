@@ -20,7 +20,7 @@ export function PrivacyPolicyPage() {
             <p className="text-text-secondary mb-6">
               At Genesis Diagnostics & Imaging Centre ("Genesis", "we", "us", or "our"), we value your privacy. 
               This Privacy Policy explains how we collect, use, and protect any information when you visit our website 
-              or interact with our diagnostic centre located in Hafeezpet, Hyderabad.
+              or interact with our diagnostic centre located in Gokul Plots, Hyderabad.
             </p>
 
             <h2 className="text-xl font-bold mt-8 mb-4">1. Information We Collect</h2>

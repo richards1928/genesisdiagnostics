@@ -5,18 +5,18 @@ export function AdvancedDiagnostics() {
   const categories = [
     {
       title: "GENOMIC TESTS",
-      subtitle: "Advanced Sequencing • Molecular Cytogenetics • Targeted Gene Panels",
+      subtitle: "Advanced Sequencing • Molecular Cytogenetic Testing • Targeted Gene Panels",
       icon: Dna,
       subcategories: [
         {
           name: "Advanced Sequencing",
           tests: [
-            "CES",
-            "WES",
-            "WGS",
-            "MGS",
+            "Clinical Exome Sequencing (CES)",
+            "Whole Exome Sequencing (WES)",
+            "Whole Genome Sequencing (WGS)",
+            "Mitochondrial Genome Sequencing (MGS)",
             "WES/CES + MGS",
-            "Couple/Trio/Family based sequencing",
+            "Couple, Trio & Family based sequencing",
             "Couple Carrier Sequencing",
             "Sanger Sequencing",
             "Fragile X Testing"
@@ -25,35 +25,33 @@ export function AdvancedDiagnostics() {
         {
           name: "Molecular Cytogenetic Testing",
           tests: [
-            "CMA",
-            "FISH",
-            "MLPA",
-            "NIPS/NIPT",
+            "Chromosomal Microarray (CMA)",
+            "Fluorescence In Situ Hybridization (FISH)",
+            "Multiplex Ligation Probe Amplification (MLPA)",
+            "Non-Invasive Prenatal Screening (NIPS/NIPT)",
             "Karyotyping"
           ]
         },
         {
           name: "Targeted Gene Panels",
-          tests: [
-            "Targeted Gene Panels"
-          ]
+          tests: []
         }
       ]
     },
     {
       title: "MOLECULAR DIAGNOSTICS",
-      subtitle: "Oncology • Infectious Disease • Advanced Biochemical Tests",
+      subtitle: "Oncology Panel (PROGEN ONCO) • Infectious Disease Diagnosis • Advanced Biochemical Tests",
       icon: Microscope,
       subcategories: [
         {
-          name: "Oncology Panel",
+          name: "Oncology Panel (PROGEN ONCO)",
           tests: [
             "Hereditary Cancer Testing",
             "Somatic Mutation Panels",
             "Liquid Biopsy",
             "HDR & HRR Testing",
             "Pharmacogenomics Onco Panel",
-            "OncoX Traq — Screens 11 solid tumors"
+            "OncoX Traq (Screens 11 solid tumors)"
           ]
         },
         {
@@ -61,8 +59,7 @@ export function AdvancedDiagnostics() {
           tests: [
             "HPV High Risk Genotyping",
             "HPV Sanger Sequencing",
-            "HCV",
-            "HBV",
+            "HCV, HBV",
             "CMV"
           ]
         },
@@ -78,14 +75,14 @@ export function AdvancedDiagnostics() {
     },
     {
       title: "MICROBIOME TESTS",
-      subtitle: "Gut Microbiome • Microbial & Metagenomics • Preventive Panels",
+      subtitle: "Gut Microbiome • Microbial & Metagenomics • Preventive Test Panel",
       icon: Activity,
       subcategories: [
         {
           name: "Gut Microbiome",
           tests: [
             "GutGenics (For Gut Health)",
-            "GutGenics + ASD"
+            "GutGenics+ASD"
           ]
         },
         {
@@ -95,7 +92,8 @@ export function AdvancedDiagnostics() {
             "Metagenomics",
             "Shotgun Metagenomics",
             "Microbial WGS",
-            "Microbial Identification (Sanger Sequencing)"
+            "Microbial Identification",
+            "(Sanger Sequencing)"
           ]
         },
         {
@@ -104,7 +102,8 @@ export function AdvancedDiagnostics() {
             "WellGenics",
             "MediGenics",
             "CardioGenics",
-            "FitGenics"
+            "FitGenics",
+            "And others....."
           ]
         }
       ]

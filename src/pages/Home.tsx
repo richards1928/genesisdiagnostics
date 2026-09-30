@@ -3,7 +3,7 @@ import { Hero } from '../components/sections/Hero';
 import { WhyGenesis } from '../components/sections/WhyGenesis';
 import { Reviews } from '../components/sections/Reviews';
 import { Location } from '../components/sections/Location';
-import { genesisData } from '../data/genesis';
+
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -11,28 +11,37 @@ import { Link } from 'react-router-dom';
 function WhatWeOffer() {
   const offerings = [
     {
-      title: "Diagnostic Testing",
+      title: "Diagnostic Tests",
       description: "Routine and comprehensive diagnostic testing services.",
       image: "/assets/what-we-offer-diagnostic-testing.jpg",
-      categories: ["Blood Tests", "Urine Testing", "Diagnostic Testing"],
+      categories: ["Blood Tests", "Urine Tests"],
       ctaText: "Explore Tests",
       link: "/tests",
       altText: "Diagnostic laboratory testing at Genesis Diagnostic"
     },
     {
-      title: "Health Check-ups & Radiology",
-      description: "Health check-up and imaging services available through Genesis Diagnostic.",
+      title: "Radiology Services",
+      description: "Professional imaging services available through Genesis Diagnostic.",
       image: "/assets/what-we-offer-radiology.jpg",
-      categories: ["Health Check-ups", "Radiology"],
+      categories: ["Radiology Services"],
       ctaText: "Explore Services",
       link: "/services",
       altText: "Diagnostic imaging and radiology services"
     },
     {
-      title: "Sample Collection",
+      title: "Genetic Tests",
+      description: "Advanced genetic and molecular testing services.",
+      image: "/assets/what-we-offer-sample-collection.jpg",
+      categories: ["Genetic & Molecular Tests"],
+      ctaText: "Explore Genetic Tests",
+      link: "/advanced-genetic-tests",
+      altText: "Genetic testing at Genesis Diagnostic"
+    },
+    {
+      title: "Home Sample Collection",
       description: "Convenient sample collection at Genesis Diagnostic.",
       image: "/assets/what-we-offer-sample-collection.jpg",
-      categories: [],
+      categories: ["Home Sample Collection"],
       ctaText: "Contact Genesis",
       link: "/contact",
       altText: "Professional sample collection at Genesis Diagnostic"
@@ -49,7 +58,7 @@ function WhatWeOffer() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {offerings.map((item, idx) => (
             <div key={idx} className="bg-white rounded-2xl border border-border/60 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group">
               <div className="w-full aspect-[16/9] overflow-hidden bg-slate-100">
@@ -88,7 +97,7 @@ function WhatWeOffer() {
             View All Tests & Prices <ArrowRight className="ml-2 w-5 h-5 inline" />
           </Link>
           <Link to="/advanced-genetic-tests" className="text-primary font-medium hover:text-medical transition-colors inline-flex items-center">
-            Explore Advanced Genetic Tests <ArrowRight className="ml-2 w-4 h-4" />
+            Explore Genetic Tests <ArrowRight className="ml-2 w-4 h-4" />
           </Link>
         </div>
       </div>
@@ -98,33 +107,7 @@ function WhatWeOffer() {
 
 
 
-function PopularTests() {
-  const tests = genesisData.testsAndPrices.blood.slice(0, 6);
-  return (
-    <section className="py-16 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-primary mb-4">Routine Tests</h2>
-          <p className="text-text-secondary">Frequently requested tests at our centre.</p>
-        </div>
-        <div className="bg-slate-50 rounded-2xl border border-border overflow-hidden">
-          {tests.map((test, idx) => (
-            <div key={idx} className="flex justify-between items-center p-4 sm:px-6 border-b border-border/60 last:border-0 hover:bg-white transition-colors">
-              <span className="font-medium text-primary text-sm sm:text-base">{test.name}</span>
-              <span className="font-bold text-medical">₹{test.price}</span>
-            </div>
-          ))}
-        </div>
-        <div className="mt-8 text-center">
-          <Link to="/tests" className="btn btn-outline inline-flex items-center justify-center w-full sm:w-auto">
-            View All Tests & Prices
-            <ArrowRight className="ml-2 w-4 h-4" />
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
+
 
 function AdvancedDiagnosticsPreview() {
   return (
@@ -135,13 +118,13 @@ function AdvancedDiagnosticsPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-2xl">
           <div className="inline-block mb-4 px-3 py-1 rounded-full bg-medical/20 border border-medical/30 text-medical font-medium text-sm glow-red">
-            Advanced Genetic Tests
+            Genetic & Molecular Tests
           </div>
           <h2 className="text-3xl md:text-5xl font-heading font-extrabold mb-6">
             Genomic, Molecular & Microbiome Testing
           </h2>
           <p className="text-slate-300 text-lg mb-10 leading-relaxed">
-            Genesis Diagnostic provides access to an extensive catalogue of advanced diagnostic categories, supporting specialized testing requirements.
+            Advanced genetic and molecular testing services provided in collaboration with Progenics Laboratories Pvt.Ltd.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
             <div className="border-l-2 border-medical pl-4">
@@ -158,7 +141,7 @@ function AdvancedDiagnosticsPreview() {
             </div>
           </div>
           <Link to="/advanced-genetic-tests" className="btn bg-medical hover:bg-medical/90 text-white border-0 glow-red-hover inline-flex items-center justify-center w-full sm:w-auto transition-all">
-            Explore Advanced Genetic Tests
+            Explore Genetic Tests
             <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>
@@ -199,14 +182,13 @@ function HomeSampleCollection() {
 
 export function Home() {
   useEffect(() => {
-    document.title = "Genesis Diagnostic | Diagnostic Centre in Hafeezpet, Hyderabad";
+    document.title = "Genesis Diagnostic | Diagnostic Centre in Gokul Plots, Hyderabad";
   }, []);
 
   return (
     <>
       <Hero />
       <WhatWeOffer />
-      <PopularTests />
       <AdvancedDiagnosticsPreview />
       <WhyGenesis />
       <Reviews />

@@ -34,7 +34,7 @@ export function Navbar() {
             <NavLink to="/" className={desktopLinkClass}>Home</NavLink>
             <NavLink to="/about" className={desktopLinkClass}>About</NavLink>
             <NavLink to="/services" className={desktopLinkClass}>Services</NavLink>
-            <NavLink to="/advanced-genetic-tests" className={desktopLinkClass}>Advanced Genetic Tests</NavLink>
+            <NavLink to="/advanced-genetic-tests" className={desktopLinkClass}>Genetic Tests</NavLink>
             <NavLink to="/tests" className={desktopLinkClass}>Tests & Prices</NavLink>
             <NavLink to="/contact" className={desktopLinkClass}>Contact</NavLink>
             <a href="tel:+919701552056" className="btn btn-primary ml-4 glow-red-hover">Call Now</a>
@@ -59,7 +59,7 @@ export function Navbar() {
             <NavLink to="/" onClick={() => setIsOpen(false)} className={mobileLinkClass}>Home</NavLink>
             <NavLink to="/about" onClick={() => setIsOpen(false)} className={mobileLinkClass}>About</NavLink>
             <NavLink to="/services" onClick={() => setIsOpen(false)} className={mobileLinkClass}>Services</NavLink>
-            <NavLink to="/advanced-genetic-tests" onClick={() => setIsOpen(false)} className={mobileLinkClass}>Advanced Genetic Tests</NavLink>
+            <NavLink to="/advanced-genetic-tests" onClick={() => setIsOpen(false)} className={mobileLinkClass}>Genetic Tests</NavLink>
             <NavLink to="/tests" onClick={() => setIsOpen(false)} className={mobileLinkClass}>Tests & Prices</NavLink>
             <NavLink to="/contact" onClick={() => setIsOpen(false)} className={mobileLinkClass}>Contact</NavLink>
             <div className="px-3 py-3 space-y-3">

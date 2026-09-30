@@ -19,11 +19,11 @@ export function Hero() {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight mb-6">
-            Comprehensive Diagnostic Services in Hafeezpet
+            Comprehensive Diagnostic & Genetic Services Under One Roof
           </h1>
           
           <p className="text-lg text-slate-100 mb-8 leading-relaxed max-w-lg">
-            Diagnostic testing and health check-up services in Hafeezpet, Hyderabad.
+            Diagnostic testing, advanced genetic tests, and health check-up services.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-10">

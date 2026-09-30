@@ -27,7 +27,7 @@ export function TermsPage() {
             <h2 className="text-xl font-bold mt-8 mb-4">1. Website Purpose and Informational Nature</h2>
             <p className="text-text-secondary mb-6">
               This website is provided for general informational purposes only. It is designed to provide information 
-              about the diagnostic testing, radiology, and health check-up services we offer at our facility in Hafeezpet, Hyderabad. 
+              about the diagnostic testing, radiology, and health check-up services we offer at our facility in Gokul Plots, Hyderabad. 
               The website does not offer direct online bookings, patient portals, or online medical consultations.
             </p>
 

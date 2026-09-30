@@ -8,23 +8,23 @@ export function Location() {
   return (
     <section id="location-section" className="py-24 bg-[#F5FCFE]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Contact Hero */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-6 tracking-tight">
             Contact Genesis Diagnostic
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed">
-            Visit us in Hafeezpet or call us for diagnostic test enquiries and sample collection.
+            Visit us in Gokul Plots or call us for diagnostic test enquiries and sample collection.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          
+
           {/* Location / Contact Card */}
           <div className="lg:col-span-2 bg-white rounded-3xl shadow-sm border border-border/60 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2 h-full">
-              
+
               {/* Left Side: Contact Info */}
               <div className="p-8 md:p-12 flex flex-col justify-center border-b md:border-b-0 md:border-r border-border/60">
                 <div className="space-y-8">
@@ -35,8 +35,8 @@ export function Location() {
                     <div className="ml-5">
                       <h4 className="text-lg font-heading font-bold text-primary mb-1">Address</h4>
                       <p className="text-slate-600 leading-relaxed">
-                        1790, 9th Phase, Venkata Ramana Colony,<br />
-                        Hafeezpet, Hyderabad, Telangana 500085
+                        660, 9th Phase, Venkata Ramana Colony,<br />
+                        Gokul Plots, Hyderabad, Telangana 500085
                       </p>
                     </div>
                   </div>
@@ -67,7 +67,7 @@ export function Location() {
                 </div>
 
                 <div className="mt-10 pt-8 border-t border-border/60 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <a 
+                  <a
                     href={mapsLink}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -76,7 +76,7 @@ export function Location() {
                     <Navigation className="mr-2 h-4 w-4" />
                     Get Directions
                   </a>
-                  <a 
+                  <a
                     href={phoneLink}
                     className="btn bg-medical text-white hover:bg-medical/90 flex items-center justify-center w-full glow-red-hover transition-all border-0"
                   >
@@ -95,12 +95,12 @@ export function Location() {
                   Find Genesis Diagnostic
                 </h3>
                 <p className="text-slate-600 text-lg mb-2">
-                  Hafeezpet, Hyderabad
+                  Gokul Plots, Hyderabad
                 </p>
                 <p className="text-medical font-medium mb-8">
                   Open · Closes 9 PM
                 </p>
-                <a 
+                <a
                   href={mapsLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -123,7 +123,7 @@ export function Location() {
             <p className="text-slate-600 mb-8 leading-relaxed">
               Convenient sample collection at Genesis Diagnostic.
             </p>
-            
+
             <div className="bg-[#F5FCFE] w-full p-6 rounded-2xl border border-medical/20 mb-8 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-16 h-16 bg-medical/5 rounded-bl-full"></div>
               <div className="flex flex-col space-y-4 relative z-10">

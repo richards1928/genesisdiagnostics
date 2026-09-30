@@ -22,7 +22,7 @@ function AdvancedGeneticTestsHero() {
           </h1>
           
           <p className="text-lg text-slate-100 leading-relaxed max-w-lg mb-8">
-            Genesis Diagnostics & Imaging Centre brings advanced genetic and molecular diagnostic services closer to patients.
+            Advanced genetic and molecular testing services provided in collaboration with Progenics Laboratories Pvt.Ltd.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -56,7 +56,7 @@ function WhatAreAdvancedTests() {
             </h2>
             <div className="space-y-4 text-slate-600 text-lg leading-relaxed mb-10">
               <p>
-                Genesis Diagnostics & Imaging Centre provides access to an extensive catalogue of advanced genetic, molecular, genomic and microbiome testing.
+                Advanced genetic and molecular testing services provided in collaboration with Progenics Laboratories Pvt.Ltd.
               </p>
               <p>
                 These services include advanced sequencing, molecular cytogenetic testing, targeted gene panels, molecular diagnostics and microbiome testing.

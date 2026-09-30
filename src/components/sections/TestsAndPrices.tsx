@@ -1,5 +1,4 @@
 import { genesisData } from '../../data/genesis';
-import { Activity, FlaskConical, Stethoscope, Home } from 'lucide-react';
 
 export function TestsAndPrices() {
   const renderTestList = (tests: { name: string; price: number }[]) => (
@@ -29,8 +28,8 @@ export function TestsAndPrices() {
         {/* Blood Tests (Full Width) */}
         <div className="bg-white rounded-3xl shadow-sm border border-border/80 overflow-hidden mb-8 md:mb-12">
           <div className="flex items-center px-6 md:px-8 py-5 md:py-6 bg-slate-50 border-b border-border/60">
-            <div className="w-12 h-12 rounded-xl bg-medical/10 flex items-center justify-center mr-5 flex-shrink-0 glow-red">
-              <Activity className="w-6 h-6 text-medical" />
+            <div className="w-14 h-14 rounded-xl bg-medical/10 flex items-center justify-center mr-5 flex-shrink-0 glow-red overflow-hidden">
+              <img src="/assets/blood_tests_icon.jpg" alt="Blood Tests" className="w-full h-full object-contain mix-blend-multiply scale-110" />
             </div>
             <h3 className="text-2xl font-heading font-extrabold text-primary">Blood Tests</h3>
           </div>
@@ -61,8 +60,8 @@ export function TestsAndPrices() {
           {/* Radiology */}
           <div className="bg-white rounded-3xl shadow-sm border border-border/80 overflow-hidden flex flex-col h-full">
             <div className="flex items-center px-6 py-5 bg-slate-50 border-b border-border/60">
-              <div className="w-10 h-10 rounded-xl bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 glow-red">
-                <Stethoscope className="w-5 h-5 text-medical" />
+              <div className="w-12 h-12 rounded-xl bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 glow-red overflow-hidden">
+                <img src="/assets/radiology_icon.jpg" alt="Radiology" className="w-full h-full object-contain mix-blend-multiply scale-110" />
               </div>
               <h3 className="text-xl font-heading font-extrabold text-primary">Radiology</h3>
             </div>
@@ -74,10 +73,10 @@ export function TestsAndPrices() {
           {/* Urine */}
           <div className="bg-white rounded-3xl shadow-sm border border-border/80 overflow-hidden flex flex-col h-full">
             <div className="flex items-center px-6 py-5 bg-slate-50 border-b border-border/60">
-              <div className="w-10 h-10 rounded-xl bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 glow-red">
-                <FlaskConical className="w-5 h-5 text-medical" />
+              <div className="w-12 h-12 rounded-xl bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 glow-red overflow-hidden">
+                <img src="/assets/urine_tests_icon.jpg" alt="Urine Tests" className="w-full h-full object-contain mix-blend-multiply scale-110" />
               </div>
-              <h3 className="text-xl font-heading font-extrabold text-primary">Urine</h3>
+              <h3 className="text-xl font-heading font-extrabold text-primary">Urine Tests</h3>
             </div>
             <div className="flex-grow">
               {renderTestList(genesisData.testsAndPrices.urine)}
@@ -87,8 +86,8 @@ export function TestsAndPrices() {
           {/* Home Sample Collection */}
           <div className="bg-white rounded-3xl shadow-sm border border-border/80 overflow-hidden flex flex-col h-full">
             <div className="flex items-center px-6 py-5 bg-slate-50 border-b border-border/60">
-              <div className="w-10 h-10 rounded-xl bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 glow-red">
-                <Home className="w-5 h-5 text-medical" />
+              <div className="w-12 h-12 rounded-xl bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 glow-red overflow-hidden">
+                <img src="/assets/home_collection_icon.jpg" alt="Home Sample Collection" className="w-full h-full object-contain mix-blend-multiply scale-110" />
               </div>
               <h3 className="text-xl font-heading font-extrabold text-primary">Home Sample Collection</h3>
             </div>

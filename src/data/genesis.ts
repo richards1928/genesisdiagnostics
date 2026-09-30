@@ -3,12 +3,12 @@ export const genesisData = {
   category: "Medical Laboratory / Diagnostic Center",
   rating: 5.0,
   reviewsCount: 24,
-  address: "1790, 9th Phase, Venkata Ramana Colony, Hafeezpet, Hyderabad, Telangana 500085",
+  address: "660, 9th Phase, Venkata Ramana Colony, Gokul Plots, Hyderabad, Telangana 500085",
   phone: "+91 97015 52056",
   tagline: "DIAGNOSTIC TESTING & HEALTH CHECK-UP SERVICES",
   founder: {
     name: "Bobbili Naleen Kumar",
-    designation: "Founder and Consultant Radiologist",
+    designation: "Founder and Senior technician-(MRI)",
     phone: "+91 97015 52056",
     address: "Plot No.660, Near to Gokul Plots, Venkataramana Colony, KPHB Colony, Hyderabad, Telangana -500085"
   },
@@ -72,7 +72,7 @@ export const genesisData = {
   },
   testsAndPrices: {
     blood: [
-      { name: "CBC", price: 400 },
+      { name: "CBP", price: 400 },
       { name: "ESR", price: 300 },
       { name: "Blood Grouping and RH Type", price: 200 },
       { name: "Fasting / Post Lunch Blood Sugars", price: 200 },

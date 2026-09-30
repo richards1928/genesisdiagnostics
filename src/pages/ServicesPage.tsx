@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Microscope, Activity, Droplets, ArrowRight, FileText, HeartPulse, Dna, Phone } from 'lucide-react';
+import { Microscope, Activity, Droplets, ArrowRight, Dna, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 function ServicesHero() {
@@ -51,53 +51,39 @@ function ServicesHero() {
 function ServiceCatalogue() {
   const sections = [
     {
-      title: "Diagnostic Services",
-      desc: "General diagnostic testing and analysis services.",
-      icon: Microscope,
-      link: "/tests",
-      cta: "Explore Tests"
-    },
-    {
-      title: "Blood Tests",
-      desc: "Routine and specialized blood tests including CBC, Lipid Profile, and Liver Function Tests.",
+      title: "Diagnostic Tests",
+      desc: "Routine and specialized diagnostic testing, including comprehensive blood and urine tests.",
       icon: Droplets,
       link: "/tests",
-      cta: "View Blood Tests"
+      cta: "Explore Diagnostic Tests"
     },
     {
-      title: "Urine Testing",
-      desc: "Comprehensive urine analysis and testing services.",
-      icon: FileText,
-      link: "/tests",
-      cta: "View Urine Tests"
-    },
-    {
-      title: "Radiology",
-      desc: "X-Ray services including single view, two views, and specialized scans.",
+      title: "Radiology Services",
+      desc: "Professional X-Ray imaging services including single view, two views, and specialized scans.",
       icon: Activity,
       link: "/tests",
       cta: "View Radiology Pricing"
     },
     {
-      title: "Health Check-ups",
-      desc: "Routine health check-up services for preventative care.",
-      icon: HeartPulse,
-      link: "/contact",
-      cta: "Call to Inquire"
+      title: "Genetic Tests",
+      desc: "Advanced genetic and molecular testing services.",
+      icon: Dna,
+      link: "/advanced-genetic-tests",
+      cta: "Explore Genetic Tests"
     },
     {
-      title: "Full-Body Testing",
-      desc: "Explore available diagnostic tests and profiles that can support routine health evaluation.",
-      icon: Activity,
+      title: "Home Sample Collection",
+      desc: "Convenient home sample collection services for routine testing.",
+      icon: Microscope,
       link: "/contact",
-      cta: "Call to Inquire"
+      cta: "Schedule Collection"
     }
   ];
 
   return (
     <section className="py-12 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {sections.map((service, idx) => (
             <Link key={idx} to={service.link} className="group flex flex-col h-full bg-white rounded-2xl p-8 border border-border/60 shadow-sm transition-all hover:shadow-md hover:-translate-y-1 hover:border-medical/30">
               <div className="w-14 h-14 bg-background-soft rounded-xl flex items-center justify-center mb-6 border border-border/50 group-hover:bg-medical/10 group-hover:border-medical/20 transition-colors">
@@ -150,14 +136,14 @@ function SpecialServices() {
             </div>
             <div className="relative z-10 w-full">
               <div className="inline-block mb-4 px-3 py-1 rounded-full bg-medical/20 text-medical font-medium text-sm glow-red">
-                Advanced Genomics & Molecular
+                Genetic & Molecular Tests
               </div>
-              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Advanced Genetic Tests</h2>
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Genetic Tests</h2>
               <p className="text-slate-300 mb-8 leading-relaxed max-w-md">
-                Genesis Diagnostic provides access to advanced genomic, molecular, and microbiome testing categories.
+                Advanced genetic and molecular testing services provided in collaboration with Progenics Laboratories Pvt.Ltd.
               </p>
               <Link to="/advanced-genetic-tests" className="btn bg-medical hover:bg-medical/90 text-white border-0 glow-red-hover transition-all">
-                Explore Advanced Genetic Tests
+                Explore Genetic Tests
               </Link>
             </div>
           </div>
