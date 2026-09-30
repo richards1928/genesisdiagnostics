@@ -31,7 +31,7 @@ function WhatWeOffer() {
     {
       title: "Genetic Tests",
       description: "Advanced genetic and molecular testing services.",
-      image: "/assets/what-we-offer-sample-collection.jpg",
+      image: "/assets/advanced-genetic-testing.jpg",
       categories: ["Genetic & Molecular Tests"],
       ctaText: "Explore Genetic Tests",
       link: "/advanced-genetic-tests",
