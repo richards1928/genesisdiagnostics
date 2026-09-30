@@ -93,7 +93,7 @@ export function AdvancedDiagnostics() {
             "Shotgun Metagenomics",
             "Microbial WGS",
             "Microbial Identification",
-            "(Sanger Sequencing)"
+            "Sanger Sequencing"
           ]
         },
         {
