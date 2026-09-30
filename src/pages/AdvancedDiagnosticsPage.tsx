@@ -54,45 +54,26 @@ function WhatAreAdvancedTests() {
             <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-primary mb-6">
               Advanced Genetic & Molecular Testing
             </h2>
-            <div className="space-y-4 text-slate-600 text-lg leading-relaxed mb-10">
+            <div className="space-y-4 text-slate-600 text-lg leading-relaxed mb-8">
               <p>
-                Advanced genetic and molecular testing services provided in collaboration with Progenics Laboratories Pvt.Ltd.
+                Understand your health at a deeper level with advanced genetic and molecular testing, provided in collaboration with Progenics Laboratories Pvt. Ltd.
               </p>
               <p>
-                These services include advanced sequencing, molecular cytogenetic testing, targeted gene panels, molecular diagnostics and microbiome testing.
+                Our range of tests helps doctors and individuals gain valuable insights into genetic conditions, disease risks, molecular changes, and the microbiome.
               </p>
             </div>
 
-            <div className="space-y-6 mb-10">
-              <div className="flex items-start">
-                <div className="w-8 h-8 rounded-full bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 mt-1 glow-red">
-                  <div className="w-2 h-2 rounded-full bg-medical"></div>
-                </div>
-                <div>
-                  <h4 className="font-heading font-bold text-primary text-lg">Advanced Sequencing</h4>
-                  <p className="text-sm text-slate-600 mt-1">CES • WES • WGS • MGS • Family-based sequencing</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-8 h-8 rounded-full bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 mt-1 glow-red">
-                  <div className="w-2 h-2 rounded-full bg-medical"></div>
-                </div>
-                <div>
-                  <h4 className="font-heading font-bold text-primary text-lg">Molecular Diagnostics</h4>
-                  <p className="text-sm text-slate-600 mt-1">Oncology • Infectious Disease • Biochemical Testing</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-8 h-8 rounded-full bg-medical/10 flex items-center justify-center mr-4 flex-shrink-0 mt-1 glow-red">
-                  <div className="w-2 h-2 rounded-full bg-medical"></div>
-                </div>
-                <div>
-                  <h4 className="font-heading font-bold text-primary text-lg">Microbiome Testing</h4>
-                  <p className="text-sm text-slate-600 mt-1">Gut Microbiome • Metagenomics • Preventive Testing</p>
-                </div>
-              </div>
+            <div className="mb-8">
+              <h4 className="font-heading font-bold text-primary text-lg mb-3">Our services include:</h4>
+              <p className="text-slate-600 leading-relaxed">
+                Advanced Sequencing <span className="text-medical/50 mx-1">|</span> Targeted Gene Panels <span className="text-medical/50 mx-1">|</span> Molecular Diagnostics <span className="text-medical/50 mx-1">|</span> Molecular Cytogenetics <span className="text-medical/50 mx-1">|</span> Microbiome Testing
+              </p>
+            </div>
+
+            <div className="mb-10">
+              <p className="text-primary font-medium italic text-lg">
+                For Better insights. Personalised understanding. Informed healthcare decisions.
+              </p>
             </div>
 
             <div>
