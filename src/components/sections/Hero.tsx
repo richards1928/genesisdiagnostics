@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export function Hero() {
   return (
     <section 
-      className="relative w-full md:h-[600px] lg:h-[650px] bg-no-repeat bg-cover bg-[position:82%_center] md:bg-center flex items-center overflow-hidden pt-28 pb-12 md:py-0"
+      className="relative w-full min-h-[550px] md:min-h-[650px] lg:min-h-[700px] bg-no-repeat bg-cover bg-[position:82%_center] md:bg-center flex items-center overflow-hidden pt-32 pb-20 md:py-24 lg:py-32"
       style={{ backgroundImage: "url('/assets/genesis-hero-new.jpg')" }}
     >
       {/* Subtle dark overlay for mobile readability, side gradient for desktop */}
