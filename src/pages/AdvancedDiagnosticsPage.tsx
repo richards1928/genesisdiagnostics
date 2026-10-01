@@ -153,27 +153,36 @@ function PartneredNetworkSection() {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-[#F5FCFE] border border-border/60 rounded-3xl p-8 md:p-10 shadow-sm text-center md:text-left flex flex-col md:flex-row items-center gap-8 hover:shadow-md transition-shadow">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-[#F5FCFE] border border-border/60 rounded-3xl p-8 md:p-12 shadow-sm text-center flex flex-col items-center gap-6 hover:shadow-md transition-shadow">
             <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center border border-border/50 shadow-sm flex-shrink-0">
               <MapPin className="w-10 h-10 text-medical" />
             </div>
             
-            <div className="flex-grow">
-              <h3 className="text-2xl font-heading font-bold text-primary mb-2">
+            <div className="flex flex-col items-center w-full">
+              <h3 className="text-2xl font-heading font-bold text-primary mb-5 md:mb-6">
                 Hyderabad — Partnered Hub
               </h3>
-              <p className="text-slate-600 mb-0">
+              
+              <div className="mb-5 md:mb-6 w-48 sm:w-56 md:w-64">
+                <img 
+                  src="/assets/progenics-logo.png" 
+                  alt="Progenics Laboratories" 
+                  className="w-full h-auto object-contain mx-auto"
+                />
+              </div>
+
+              <p className="text-slate-600 mb-2 max-w-lg mx-auto leading-relaxed">
                 Advanced genetic and molecular testing services in collaboration with Progenics Laboratories Pvt.Ltd.
               </p>
             </div>
             
-            <div className="flex-shrink-0 mt-6 md:mt-0 w-full md:w-auto">
+            <div className="mt-2 w-full sm:w-auto">
               <a 
                 href="https://www.progenicslabs.com/our-networks/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="btn bg-primary hover:bg-primary/90 text-white border-0 shadow-sm flex md:inline-flex items-center justify-center px-6 py-3 transition-all w-full md:w-auto"
+                className="btn bg-primary hover:bg-primary/90 text-white border-0 shadow-sm flex items-center justify-center px-8 py-3 transition-all w-full sm:w-auto"
               >
                 View Our Network
                 <ArrowRight className="ml-2 w-5 h-5" />
