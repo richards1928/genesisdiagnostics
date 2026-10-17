@@ -29,10 +29,54 @@ function ScrollToTop() {
   return null;
 }
 
+const OFFICIAL_DOMAIN = 'https://genesisdiagnostic.in';
+
+const PUBLIC_CANONICAL_ROUTES: Record<string, string> = {
+  '/': `${OFFICIAL_DOMAIN}/`,
+  '/about': `${OFFICIAL_DOMAIN}/about`,
+  '/services': `${OFFICIAL_DOMAIN}/services`,
+  '/advanced-genetic-tests': `${OFFICIAL_DOMAIN}/advanced-genetic-tests`,
+  '/tests': `${OFFICIAL_DOMAIN}/tests`,
+  '/contact': `${OFFICIAL_DOMAIN}/contact`,
+  '/privacy-policy': `${OFFICIAL_DOMAIN}/privacy-policy`,
+  '/terms-and-conditions': `${OFFICIAL_DOMAIN}/terms-and-conditions`,
+  '/medical-disclaimer': `${OFFICIAL_DOMAIN}/medical-disclaimer`,
+};
+
+function CanonicalManager() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const normalized = pathname === '/' ? '/' : pathname.replace(/\/+$/, '');
+    const canonicalUrl = PUBLIC_CANONICAL_ROUTES[normalized];
+
+    let canonicalLink = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+
+    if (canonicalUrl) {
+      if (!canonicalLink) {
+        canonicalLink = document.createElement('link');
+        canonicalLink.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonicalLink);
+      }
+      canonicalLink.setAttribute('href', canonicalUrl);
+
+      const ogUrl = document.querySelector<HTMLMetaElement>('meta[property="og:url"]');
+      if (ogUrl) {
+        ogUrl.setAttribute('content', canonicalUrl);
+      }
+    } else if (canonicalLink) {
+      canonicalLink.remove();
+    }
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      <CanonicalManager />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

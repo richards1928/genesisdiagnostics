@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://genesisdiagnostics.in/sitemap.xml
+Sitemap: https://genesisdiagnostic.in/sitemap.xml
